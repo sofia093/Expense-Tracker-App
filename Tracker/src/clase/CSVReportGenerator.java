@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-public class CSVReportGenerator implements ReportGenerator {
+public class CSVReportGenerator implements IReportGenerator {
     @Override
     public void generateReport(List<Expense> expenses) {
         try{

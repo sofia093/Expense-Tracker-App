@@ -2,7 +2,7 @@ package clase;
 
 import java.util.List;
 
-public class ConsoleReportGenerator implements ReportGenerator {
+public class ConsoleReportGenerator implements IReportGenerator {
 
     @Override
     public void generateReport(List<Expense> expenses) {
@@ -10,6 +10,6 @@ public class ConsoleReportGenerator implements ReportGenerator {
         for (Expense e : expenses) {
             System.out.println(e);
         }
-        System.out.println("========================");
+        System.out.println("========================" + "\n");
     }
 }
