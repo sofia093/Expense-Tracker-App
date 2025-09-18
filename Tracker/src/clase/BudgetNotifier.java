@@ -1,6 +1,6 @@
 package clase;
 
-public class Notifier implements IBudgetObserver {
+public class BudgetNotifier implements IBudgetObserver {
     @Override
     public void receiveNotification(String notification) {
         System.out.println(notification);

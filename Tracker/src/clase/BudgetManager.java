@@ -7,12 +7,8 @@ public class BudgetManager implements ISubject {
     private List<IBudgetObserver> observers = new ArrayList<>();
     private double budget;
 
-    public BudgetManager(double budget) {
-        this.budget = budget;
-    }
-
-    public void setBudget(double budget) {
-        this.budget = budget;
+    public BudgetManager() {
+        this.budget = Config.getInstance().getBudget();
     }
 
     @Override

@@ -33,6 +33,6 @@ public class Expense {
 
     @Override
     public String toString() {
-        return date + " | " + category + " | " + description + " : " + amount + " RON";
+        return date + " | " + category + " | " + description + " : " + amount + " lei";
     }
 }
